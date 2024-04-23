@@ -1,0 +1,117 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Arial, Helvetica,sans-serif;
+    background-color: #111;
+}
+.row__poster {
+     width: 100%;
+     object-fit: contain;
+     max-height : 100px;
+     margin-right : 10px;
+     transition : transform 450ms;
+}
+.row__posters {
+    display : flex;
+    overflow-y:hidden;
+    overflow-x:hidden;
+    padding: 20px;
+
+}
+.row__posters :hover {
+    transform: scale(1.08)
+}
+
+.row__posters ::-webkit-scrollbar {
+    display: none;
+}
+.row__posterLarge {
+    max-height: 250px;
+}
+.row__posterLarge:hover {
+    transform: scale(1.09)
+}
+.row {
+    color:white;
+   
+}
+.banner {
+    background-image: url(raman.jpg);
+    background-size: cover;
+    background-position: center ;
+    color: white;
+    object-fit:contain ;
+    height: 425px;
+}
+.banner__contents{
+    margin-left: 20px;
+    padding-top: 120px;
+    height: 170px;
+}
+.banner__tittle{
+    font-size: 3rem;
+    font-weight: 800;
+    padding-bottom: 0.3rem;
+
+}
+
+.banner__button {
+    cursor:pointer;
+    color:#fff;
+    outline:none;
+    border: solid;
+    font-weight: 900;
+    border-radius : 0.4vw;
+    padding-left : 1rem;
+    padding-right : 1rem;
+    margin-right: 1rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    margin-right: 1rem;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    background-color: rgb(51,51,51,0.5);
+}
+.banner__button:hover{
+    color: #000;
+    background-color: violet;
+    transition: all 0.2s;
+}
+.banner--fadeBootom{
+    margin-top:145px;
+    height: 7.4rem;
+    background-image: linear-gradient(180deg, transparent,rgba(37,37,37,0.61),#111);
+
+}
+.nav__logo{
+    width: 125px;
+    object-fit: contain;
+
+}
+.nav{
+    position:fixed;
+    top:0;
+    width: 100%;
+    display: flex;  
+    justify-content: space-between;
+    padding:20px;
+    z-index:1;
+    transition-timing-function:ease-in ;
+    transition: all 0.5s; 
+
+}
+.nav__black{
+    background-color: #111;
+    transition: all 0.5s;
+}
+
+h2{
+    font-weight: bolder;
+}
+h1{
+    font-weight: bolder;
+ color: rgb(241, 7, 7);
+}
